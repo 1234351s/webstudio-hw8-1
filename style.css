@@ -1,0 +1,44 @@
+ .lessons-list li:nth-child(odd) {
+    background-color: #f0f0f0; 
+  }
+
+  .lessons-list li:nth-child(even) {
+    background-color: #e0e0e0;
+  }
+
+  .lessons-list li:first-child {
+    font-weight: bold; 
+  }
+
+  .lessons-list li:last-child {
+    font-style: italic; 
+  }
+
+  .lessons-list li:hover {
+    color: red; 
+  }
+
+  .lessons-list li:active {
+    transform: scale(1.1); 
+  }
+
+  .lessons-list li:focus-within {
+    background-color: yellow; 
+  }
+
+  .lessons-list li:nth-of-type(3n) {
+    color: blue; 
+  }
+
+  .lessons-list li:nth-last-of-type(2) {
+    text-decoration: underline; 
+  }
+
+  .lessons-list li:nth-of-type(2)::before {
+    content: "📌"; 
+    margin-right: 5px;
+  }
+
+  .lessons-list li:not(:last-child)::after {
+    content: " | ";
+  } 
